@@ -10,8 +10,8 @@ namespace DiscordSpambot
             IWebDriver driver = new ChromeDriver();
             Console.WriteLine("started");
             driver.Navigate().GoToUrl("https://discord.com/login");
-            driver.FindElement(By.XPath("/html/body/div/div[2]/div/div[2]/div/div/form/div/div/div[1]/div[3]/div[1]/div/input")).SendKeys("edgib102@gmail.com");
-            driver.FindElement(By.XPath("/html/body/div/div[2]/div/div[2]/div/div/form/div/div/div[1]/div[3]/div[2]/div/input")).SendKeys("edgib101");
+            driver.FindElement(By.XPath("/html/body/div/div[2]/div/div[2]/div/div/form/div/div/div[1]/div[3]/div[1]/div/input")).SendKeys("put email here");
+            driver.FindElement(By.XPath("/html/body/div/div[2]/div/div[2]/div/div/form/div/div/div[1]/div[3]/div[2]/div/input")).SendKeys("put password here");
             driver.FindElement(By.XPath("/html/body/div/div[2]/div/div[2]/div/div/form/div/div/div[1]/div[3]/button[2]")).Click();
 
             System.Threading.Thread.Sleep(14000);
